@@ -1,7 +1,6 @@
-
 :root {
-  --cor-primaria: #002347; 
-  --cor-secundaria: #f26522; 
+  --cor-primaria: #002347;
+  --cor-secundaria: #f26522;
   --cor-fundo: #f8f9fa;
   --cor-texto: #333333;
   --cor-branca: #ffffff;
@@ -19,7 +18,6 @@ body {
   color: var(--cor-texto);
   line-height: 1.6;
 }
-
 
 .hero {
   background-color: var(--cor-primaria);
@@ -70,7 +68,6 @@ body {
   margin-bottom: 1rem;
 }
 
-
 section {
   padding: 4rem 5%;
   max-width: 1200px;
@@ -90,7 +87,6 @@ h2 {
   margin: 0 auto;
 }
 
-
 .grid-livros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -102,7 +98,6 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
-
 
 .card-livro,
 .card-unidade {
@@ -145,7 +140,6 @@ h2 {
   font-size: 1.5rem;
 }
 
-
 footer {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
@@ -154,10 +148,20 @@ footer {
   margin-top: 3rem;
 }
 
-
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 2%;
+  }
   .nav-links {
-    display: none; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .nav-links a {
+    font-size: 0.9rem;
   }
   .hero-content h1 {
     font-size: 2.5rem;
@@ -172,55 +176,52 @@ footer {
 
 .cartao-livro {
   background-color: #ffffff;
-  border-radius: 8px; 
+  border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
 .cartao-livro img {
-  width: 100%; 
-  height: auto; 
-  border-radius: 4px; 
-  object-fit: cover; 
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  object-fit: cover;
 }
 
 .cartao-livro h3 {
-  color: #00234b; 
+  color: #00234b;
   margin-top: 16px;
   font-size: 1.1rem;
 }
 
-
 .cartao-unidade {
-  background-color: #f05a28; 
-  border-radius: 8px; 
-  overflow: hidden; 
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #f05a28;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: #ffffff; 
+  color: #ffffff;
 }
-
 
 .cartao-unidade img {
-  width: 100%; 
-  height: 200px; 
-  object-fit: cover; 
-  display: block; 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
 }
-
 
 .info-unidade {
   padding: 20px;
 }
 
 .info-unidade h3 {
-  margin: 0 0 10px 0; 
+  margin: 0 0 10px 0;
   font-size: 1.3rem;
 }
 
 .info-unidade p {
   margin: 0;
   font-size: 0.95rem;
-  opacity: 0.9; 
+  opacity: 0.9;
 }
