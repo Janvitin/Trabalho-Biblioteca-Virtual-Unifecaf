@@ -1,7 +1,7 @@
-/* Variáveis de Cores e Tipografia */
+
 :root {
-  --cor-primaria: #002347; /* Azul Escuro */
-  --cor-secundaria: #f26522; /* Laranja */
+  --cor-primaria: #002347; 
+  --cor-secundaria: #f26522; 
   --cor-fundo: #f8f9fa;
   --cor-texto: #333333;
   --cor-branca: #ffffff;
@@ -20,7 +20,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header e Navegação */
+
 .hero {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
@@ -70,7 +70,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Seções Gerais */
+
 section {
   padding: 4rem 5%;
   max-width: 1200px;
@@ -90,7 +90,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* Grid Responsivo (Livros e Unidades) */
+
 .grid-livros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -103,7 +103,7 @@ h2 {
   gap: 2rem;
 }
 
-/* Cards */
+
 .card-livro,
 .card-unidade {
   background-color: var(--cor-branca);
@@ -145,7 +145,7 @@ h2 {
   font-size: 1.5rem;
 }
 
-/* Footer */
+
 footer {
   background-color: var(--cor-primaria);
   color: var(--cor-branca);
@@ -154,10 +154,10 @@ footer {
   margin-top: 3rem;
 }
 
-/* Responsividade para Smartphones */
+
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* Simplifica o menu no mobile */
+    display: none; 
   }
   .hero-content h1 {
     font-size: 2.5rem;
@@ -168,4 +168,59 @@ footer {
   section {
     padding: 3rem 5%;
   }
+}
+
+.cartao-livro {
+  background-color: #ffffff;
+  border-radius: 8px; 
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+  text-align: center;
+}
+
+.cartao-livro img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 4px; 
+  object-fit: cover; 
+}
+
+.cartao-livro h3 {
+  color: #00234b; 
+  margin-top: 16px;
+  font-size: 1.1rem;
+}
+
+
+.cartao-unidade {
+  background-color: #f05a28; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  color: #ffffff; 
+}
+
+
+.cartao-unidade img {
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
+  display: block; 
+}
+
+
+.info-unidade {
+  padding: 20px;
+}
+
+.info-unidade h3 {
+  margin: 0 0 10px 0; 
+  font-size: 1.3rem;
+}
+
+.info-unidade p {
+  margin: 0;
+  font-size: 0.95rem;
+  opacity: 0.9; 
 }
